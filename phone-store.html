@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Phone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/phone-store.css">
+    <link rel="stylesheet" href="CSS/rps-phone-store.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="JAVASCRIPT/phone-store.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-bar-mobile">
+            <ul>
+                <div class="form-acount-mobile">
+                    <div class="img-acount">
+                        <i class="fa-sharp fa-solid fa-user"></i>
+                    </div>
+                    <div class="acount">
+                        <a href="">Tài khoản</a>
+                        <a href="">Đăng nhập</a>
+                    </div>
+                </div>
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Sản phẩm</a></li>
+                <li><a href="">Về Chúng tôi</a></li>
+                <li><a href="">Bảo hành</a></li>
+                <li><a href="">Tuyển dụng</a></li>
+                <li><a href="">Liên hệ</a></li>                              
+            </ul>
+        </div>
+        <div class="logo">
+            <h3>HPThien</h3>
+            <h4>Store</h4>
+        </div>
+        <div class="nav-bar-header">
+            <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Sản phẩm</a>
+                    <ul class="menu-child">
+                        <li><a href="">Iphone</a></li>
+                        <li><a href="">Samsung</a></li>
+                        <li><a href="">Xiaomi</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Về Chúng tôi</a></li>
+                <li><a href="">Bảo hành</a></li>
+                <li><a href="">Tuyển dụng</a></li>
+                <li><a href="">Liên hệ</a></li>                              
+            </ul>
+        </div>
+        <div class="quantity">
+            <div class="order-number">0</div>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="form-acount">
+            <div class="sign">
+                <i class="fa-solid fa-user"></i>
+                <a href="">Đăng kí</a>
+            </div>
+            <div class="login">
+                <i class="fa-solid fa-key"></i>
+                <a href="">Đăng nhập</a>
+            </div>
+        </div>
+    </div>
+    <div class="layout"></div>
+    <div class="form-sign">
+        <div class="close">
+            <i class="fa-solid fa-square-xmark"></i>
+        </div>
+        <div class="form-input">
+            <p>Họ Và Tên</p>
+            <input type="text" placeholder="Nhập họ và tên...">
+        </div>
+        <div class="form-input">
+            <p>Số điện thoại</p>
+            <input type="text" placeholder="Nhập Số điện thoại...">
+        </div>
+        <div class="form-input">
+            <p>Email</p>
+            <input type="text" placeholder="Nhập Email...">
+        </div>
+        <div class="form-input">
+            <p>Tên tài khoản</p>
+            <input type="text" placeholder="Nhập tên tài khoản...">
+        </div>
+        <div class="form-input">
+            <p>Mật khẩu</p>
+            <input type="password" placeholder="Nhập mật khẩu...">
+        </div>
+        <div class="form-input">
+            <p>Nhập mật khẩu lần nữa</p>
+            <input type="password" placeholder="Nhập mật khẩu...">
+        </div>
+        <div class="btn">
+            <button>Đăng kí</button>
+        </div>
+    </div>
+    <div class="form-login">
+        <div class="close">
+            <i class="fa-solid fa-square-xmark"></i>
+        </div>
+        <div class="form-input">
+            <p>Tên tài khoản</p>
+            <input type="text" placeholder="Nhập tên tài khoản...">
+        </div>
+        <div class="form-input">
+            <p>Mật khẩu</p>
+            <input type="password" placeholder="Nhập mật khẩu...">
+        </div>
+        <div class="forgot-password">
+            <a href="">Đăng kí</a>
+            <a href="">Quên mật khẩu</a>
+        </div>
+        <div class="btn-login">
+            <button>Đăng nhập</button>
+        </div>
+    </div>
+    <div class="form-forgot">
+        <div class="img-key">
+            <i class="fa-solid fa-key"></i>
+        </div>
+        <div class="text-forgot">
+            Nhập email, SĐT hoặc tên người dùng để chúng tôi gửi cho bạn liên kết
+        </div>
+        <input type="text" placeholder="Email, điện thoại, hoặc tên người dùng">
+        <div class="btn-sent">
+            <button>Gửi liên kết đăng nhập</button>
+        </div>
+        <div class="form-line">
+            <div class="line"></div>
+            Hoặc
+            <div class="line"></div>
+        </div>
+        <div class="create-acount">
+            <a href="">Đăng kí tài khoản mới</a>
+        </div>
+    </div>
+    <div class="congras">
+        <p>Đăng kí tài khoản thành công !</p>
+        <button>Xác nhận</button>
+    </div>
+    <div class="congras-login">
+        <p>Đăng nhập tài khoản thành công !</p>
+        <button>Xác nhận</button>
+    </div>
+    <div class="link-sent">
+        <p>Đã gửi liên kết thành công !</p>
+        <button>Xác nhận</button>
+    </div>
+    <div class="content-sales">
+        <div class="wrapper-bg-sales">
+            <h3>
+                <i class="fa-solid fa-universal-access"></i>
+                Chương trình khuyến mãi
+            </h3>
+            <div class="bg-sales">
+                <div class="img-sales img-active"><img src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/mac-m1-sliding-dday-01.png" alt=""></div>
+                <div class="img-sales"><img src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/s23-ultra-thang3-2023-001.png" alt=""></div>
+                <div class="img-sales"><img src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/xiaomi%2013%20pro%20pre%20order.jpg" alt=""></div>
+            </div>
+            <div class="click-sales">
+                <div class="next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <ul>
+                    <li class="click-bg">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-products">
+            <div class="title-item">
+                <h3>Sản phẩm :</h3>
+                <div class="filter">
+                    <h3>
+                        Điện thoại 
+                        <i class="fa-solid fa-angle-down"></i>
+                    </h3>
+                    <div class="list-item">
+                        <p>Iphone</p>
+                        <p>Samsung</p>
+                        <p>Xiaomi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="img-slide iphone">
+                <div class="img-item">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-vang-thumb-600x600.jpg" =alt="">
+                    <div class="info-item">
+                        <h3>iphone 14 Pro Max</h3>
+                        <div class="display-info">
+                            <span>6.7"</span>
+                            <span>Super Retina XDR</span>
+                        </div>
+                        <ul class="gram">
+                            <li>128GB</li>
+                            <li>256GB</li>
+                            <li>512GB</li>
+                            <li>1TB</li>
+                        </ul>
+                        <strong>29.490.000 vnđ</strong>
+                        <ul class="star">
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="info-buy">
+                        <button>Mua ngay</button>
+                        <div class="quantity-item">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" class="amount">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-item"><img src="https://cdn.tgdd.vn/Products/Images/42/247508/iphone-14-pro-tim-thumb-600x600.jpg" alt="">
+                    <div class="info-item">
+                        <h3>iphone 14 Pro</h3>
+                        <div class="display-info">
+                            <span>6.1"</span>
+                            <span>Super Retina XDR</span>
+                        </div>
+                        <ul class="gram">
+                            <li>128GB</li>
+                            <li>256GB</li>
+                            <li>1TB</li>
+                        </ul>
+                        <strong>26.490.000 vnđ</strong>
+                        <ul class="star">
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="info-buy">
+                        <button>Mua ngay</button>
+                        <div class="quantity-item">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" class="amount">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-item"><img src="https://cdn.tgdd.vn/Products/Images/42/240259/iPhone-14-thumb-do-600x600.jpg" alt="">
+                    <div class="info-item">
+                        <h3>iphone 14</h3>
+                        <div class="display-info">
+                            <span>6.1"</span>
+                            <span>Super Retina XDR</span>
+                        </div>
+                        <ul class="gram">
+                            <li>128GB</li>
+                            <li>256GB</li>
+                            <li>1TB</li>
+                        </ul>
+                        <strong>22.490.000 vnđ</strong>
+                        <ul class="star">
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="info-buy">
+                        <button>Mua ngay</button>
+                        <div class="quantity-item">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" class="amount">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-item"><img src="https://cdn.tgdd.vn/Products/Images/42/245545/iPhone-14-plus-thumb-den-600x600.jpg" alt="">
+                    <div class="info-item">
+                        <h3>iphone 14 Plus</h3>
+                        <div class="display-info">
+                            <span>6.7"</span>
+                            <span>Super Retina XDR</span>
+                        </div>
+                        <ul class="gram">
+                            <li>128GB</li>
+                            <li>256GB</li>
+                            <li>1TB</li>
+                        </ul>
+                        <strong>24.490.000 vnđ</strong>
+                        <ul class="star">
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="info-buy">
+                        <button>Mua ngay</button>
+                        <div class="quantity-item">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" class="amount">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-slide samsung">
+                <div class="img-item">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/249948/samsung-galaxy-s23-ultra-1-600x600.jpg" =alt="">
+                    <div class="info-item">
+                        <h3>Samsung Galaxy S23 Ultra 5G</h3>
+                        <div class="display-info">
+                            <span>6.8"</span>
+                            <span>Quad HD+ (2K+)</span>
+                        </div>
+                        <ul class="gram">
+                            <li>8G-256GB</li>
+                            <li>12G-512GB</li>
+                            <li>12G-1TB</li>
+                        </ul>
+                        <strong>26.990.000 vnđ</strong>
+                        <ul class="star">
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="info-buy">
+                        <button>Mua ngay</button>
+                        <div class="quantity-item">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" class="amount">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-item"><img src="https://cdn.tgdd.vn/Products/Images/42/264060/samsung-galaxy-s23-600x600.jpg" alt="">
+                    <div class="info-item">
+                        <h3>Samsung Galaxy S23 5G</h3>
+                        <div class="display-info">
+                            <span>6.1"</span>
+                            <span>Full HD+</span>
+                        </div>
+                        <ul class="gram">
+                            <li>8G-128GB</li>
+                            <li>8G-256GB</li>
+                        </ul>
+                        <strong>18.390.000 vnđ</strong>
+                        <ul class="star">
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="info-buy">
+                        <button>Mua ngay</button>
+                        <div class="quantity-item">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" class="amount">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-item"><img src="https://cdn.tgdd.vn/Products/Images/42/250625/samsung-galaxy-z-fold4-kem-256gb-600x600.jpg" alt="">
+                    <div class="info-item">
+                        <h3>Samsung Galaxy Z Fold4 5G</h3>
+                        <div class="display-info">
+                            <span>Chính 7.6" & Phụ 6.1"</span>
+                            <span>Quad HD+ (2K+)</span>
+                        </div>
+                        <ul class="gram">
+                            <li>256GB</li>
+                            <li>512GB</li>
+                        </ul>
+                        <strong>37.990.000 vnđ</strong>
+                        <ul class="star">
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="info-buy">
+                        <button>Mua ngay</button>
+                        <div class="quantity-item">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" class="amount">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-item"><img src="https://cdn.tgdd.vn/Products/Images/42/258047/samsung-galaxy-z-flip4-5g-128gb-thumb-tim-600x600.jpg" alt="">
+                    <div class="info-item">
+                        <h3>Samsung Galaxy Z Flip4 5G</h3>
+                        <div class="display-info">
+                            <span>Chính 6.7" & Phụ 1.9"</span>
+                            <span>Full HD+</span>
+                        </div>
+                        <ul class="gram">
+                            <li>128GB</li>
+                            <li>256GB</li>
+                            <li>512GB</li>
+                        </ul>
+                        <strong>19.990.000 vnđ</strong>
+                        <ul class="star">
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="info-buy">
+                        <button>Mua ngay</button>
+                        <div class="quantity-item">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" class="amount">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-slide xiaomi">
+                <div class="img-item">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/267984/xiaomi-13-thumb-xanh-600x600.jpg" =alt="">
+                    <div class="info-item">
+                        <h3>Xiaomi 13 5G</h3>
+                        <div class="display-info">
+                            <span>Full HD+</span>
+                        </div>
+                        <ul class="gram">
+                            <li>128GB</li>
+                            <li>256GB</li>
+                            <li>512GB</li>
+                            <li>1TB</li>
+                        </ul>
+                        <strong>22.990.000 vnđ</strong>
+                        <ul class="star">
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="info-buy">
+                        <button>Mua ngay</button>
+                        <div class="quantity-item">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" class="amount">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-item"><img src="https://cdn.tgdd.vn/Products/Images/42/282903/xiaomi-13-pro-thumb-1-2-600x600.jpg" alt="">
+                    <div class="info-item">
+                        <h3>Xiaomi 13 Pro 5G</h3>
+                        <div class="display-info">
+                            <span>6.73"</span>
+                            <span>Quad HD+(2K+)</span>
+                        </div>
+                        <ul class="gram">
+                            <li>128GB</li>
+                            <li>256GB</li>
+                            <li>1TB</li>
+                        </ul>
+                        <strong>29.990.000 vnđ</strong>
+                        <ul class="star">
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="info-buy">
+                        <button>Mua ngay</button>
+                        <div class="quantity-item">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" class="amount">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-item"><img src="https://cdn.tgdd.vn/Products/Images/42/302531/xiaomi-13-lite-xanh-thumb-1-600x600.jpg" alt="">
+                    <div class="info-item">
+                        <h3>Xiaomi 13 Lite 5G</h3>
+                        <div class="display-info">
+                            <span>6.55"</span>
+                            <span>Full HD+</span>
+                        </div>
+                        <ul class="gram">
+                            <li>128GB</li>
+                            <li>256GB</li>
+                            <li>1TB</li>
+                        </ul>
+                        <strong>11.490.000 vnđ</strong>
+                        <ul class="star">
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="info-buy">
+                        <button>Mua ngay</button>
+                        <div class="quantity-item">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" class="amount">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-item"><img src="https://cdn.tgdd.vn/Products/Images/42/234621/Xiaomi-12-xam-thumb-mau-600x600.jpg" alt="">
+                    <div class="info-item">
+                        <h3>Xiaomi 12</h3>
+                        <div class="display-info">
+                            <span>6.28"</span>
+                            <span>Full HD+</span>
+                        </div>
+                        <ul class="gram">
+                            <li>128GB</li>
+                            <li>256GB</li>
+                            <li>1TB</li>
+                        </ul>
+                        <strong>11.690.000 vnđ</strong>
+                        <ul class="star">
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="info-buy">
+                        <button>Mua ngay</button>
+                        <div class="quantity-item">
+                            <button class="minus">-</button>
+                            <input type="text" value="1" class="amount">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-guarantee">
+                <h3>TRUNG TÂM HỖ TRỢ TRA CỨU THÔNG TIN, CHÍNH SÁCH BẢO HÀNH SẢN PHẨM CHÍNH HÃNG</h3>
+                <p>
+                    CHÚNG TÔI xin lỗi vì sự cố khiến điện thoại của quý khách bị hỏng và phải đi bảo hành. Thế Giới Di Động có 2 hỗ trợ dành riêng cho khách hàng mua điện thoại tại TGDĐ trong thời gian đi bảo hành như sau:
+
+                    Thế Giới Di Động cung cấp cho khách hàng một điện thoại đã qua sử dụng để khách hàng sử dụng tạm thời trong thời gian bảo hành. Chi tiết máy cung cấp quý khách có thể hỏi nhân viên siêu thị hoặc xem trên giấy tiếp nhận bảo hành/sửa chữa dịch vụ.
+
+                    Bảo hành có cam kết trong 12 tháng Nếu máy gửi đi bảo hành quá 15 ngày hãng chưa trả máy cho khách hàng, hoặc phải bảo hành lại sản phẩm lần nữa trong 30 ngày kể từ lần bảo hành trước), khách hàng được áp dụng phương thức Hư gì đổi nấy ngay và luôn hoặc Hoàn tiền với mức phí giảm 50%
+
+                    Lưu ý: Chỉ áp dụng cho điện thoại và phải còn trong điều kiện bảo hành.
+                </p>
+            </div>
+            <div class="form-email">
+                <h3>Đăng kí nhận tin</h3>
+                <div class="form-input-email">
+                    <input type="text" placeholder="Nhập email của bạn">
+                    <button>Đăng kí</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+    
+</body>
+</html>
